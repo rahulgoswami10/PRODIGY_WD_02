@@ -12,9 +12,17 @@ body {
     height: 100vh;
     background-color: #151515;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+
+h1 {
+    font-size: 5rem;
+    color: silver;
+    margin-top: -10%;
+    opacity: 70%;
 }
 
 .container {
@@ -26,7 +34,7 @@ body {
     padding: 4rem 6rem;
     border-radius: 1rem;
     text-align: center;
-    margin-top: -10%;
+    margin-top: 4rem;
     
 }
 
@@ -107,7 +115,11 @@ ul {
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
     .container {
         max-width: 560px;
     }
@@ -118,6 +130,10 @@ ul {
 }
 
 @media screen and (max-width: 598px) {
+    h1 {
+        font-size: 3.35rem;
+    }
+
     .container {
         max-width: 360px;
         height: auto;
@@ -139,8 +155,13 @@ ul {
 }
 
 @media screen and (max-width: 398px) {
+    h1 {
+        font-size: 2.45rem;
+    }
+
     .container{
         max-width: 338px;
+        margin-top: 2.45rem;
     }
 
     .container > div {
